@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyectos | YUHER Constructora e Inmobiliaria en Arequipa, Perú</title>
+  <meta name="description" content="Proyectos de construcción ejecutados por YUHER en Arequipa, Perú: drywall, estructura metálica, fachadas y remodelaciones de alta calidad.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="proyectos.html">
+  <meta property="og:title" content="Proyectos | YUHER Constructora e Inmobiliaria en Arequipa, Perú">
+  <meta property="og:description" content="Explora nuestros proyectos de construcción y remodelación en Arequipa, Perú.">
+  <link rel="icon" href="logo-removebg-preview.png" type="image/png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@300;400;500;600&family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div id="cursor"></div>
+
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="logo-removebg-preview.png" alt="YUHER">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link active" href="proyectos.html">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container" style="position:relative;z-index:2;">
+      <span class="section-label">Portafolio en Arequipa</span>
+      <h1 class="mt-2">Nuestros Proyectos</h1>
+      <p>Cada obra ejecutada con precisión, calidad y profesionalismo en Arequipa y el sur del Perú.</p>
+    </div>
+  </section>
+
+  <!-- Projects Grid -->
+  <section class="projects-section">
+    <div class="container">
+      <!-- Filters -->
+      <div class="text-center mb-5 reveal project-filters">
+        <button class="filter-btn active me-2 mb-2" onclick="filterProjects('all', event)">Todos</button>
+        <button class="filter-btn me-2 mb-2" onclick="filterProjects('remodelacion', event)">Remodelación</button>
+        <button class="filter-btn me-2 mb-2" onclick="filterProjects('estructura', event)">Estructura Metálica</button>
+        <button class="filter-btn mb-2" onclick="filterProjects('fachada', event)">Fachada</button>
+      </div>
+
+      <div class="row g-4" id="projectsGrid">
+        <div class="col-md-6 col-lg-4 project-card-wrapper reveal" data-category="remodelacion">
+          <div class="project-card">
+            <img src="assets/images/acabado-drywall-cielo-raso-mayolica.png" alt="Acabados interiores">
+            <div class="project-info">
+              <span class="badge-gold" style="font-size:0.65rem;">Remodelación</span>
+              <h6 class="mt-2">Acabados Interiores</h6>
+              <p style="color:var(--light-gray);font-size:0.8rem;margin:0.3rem 0 0;">Cielo raso, drywall y enchapado de mayólica</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 project-card-wrapper reveal" data-category="estructura">
+          <div class="project-card">
+            <img src="assets/images/estructura-metalica-techo.jpg" alt="Estructura metálica">
+            <div class="project-info">
+              <span class="badge-gold" style="font-size:0.65rem;">Estructura</span>
+              <h6 class="mt-2">Estructura Metálica de Techo</h6>
+              <p style="color:var(--light-gray);font-size:0.8rem;margin:0.3rem 0 0;">Armadura y cobertura en acero galvanizado</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 project-card-wrapper reveal" data-category="estructura">
+          <div class="project-card">
+            <img src="assets/images/estructuras-drywall.png" alt="Estructuras de drywall">
+            <div class="project-info">
+              <span class="badge-gold" style="font-size:0.65rem;">Estructura</span>
+              <h6 class="mt-2">Cobertura y Estructura</h6>
+              <p style="color:var(--light-gray);font-size:0.8rem;margin:0.3rem 0 0;">Techo metálico con soportes modulares</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 project-card-wrapper reveal" data-category="fachada">
+          <div class="project-card">
+            <img src="assets/images/estructura-metalica-pergola-acabados-exteriores.jpeg" alt="Fachada comercial">
+            <div class="project-info">
+              <span class="badge-gold" style="font-size:0.65rem;">Fachada</span>
+              <h6 class="mt-2">Pergola y Exteriores</h6>
+              <p style="color:var(--light-gray);font-size:0.8rem;margin:0.3rem 0 0;">Estructura metalica para pergola y acabados exteriores</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 project-card-wrapper reveal" data-category="remodelacion">
+          <div class="project-card">
+            <img src="assets/images/modificaciones-estructuras-drywall.png" alt="Techo interior">
+            <div class="project-info">
+              <span class="badge-gold" style="font-size:0.65rem;">Remodelación</span>
+              <h6 class="mt-2">Fachada Comercial</h6>
+              <p style="color:var(--light-gray);font-size:0.8rem;margin:0.3rem 0 0;">Modificaciones con estructuras de drywall</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 project-card-wrapper reveal" data-category="remodelacion">
+          <div class="project-card">
+            <img src="assets/images/perfiles-galvanizados-alta-resistencia.png" alt="Escalera y pérgola">
+            <div class="project-info">
+              <span class="badge-gold" style="font-size:0.65rem;">Remodelación</span>
+              <h6 class="mt-2">Estructura de Alta Resistencia</h6>
+              <p style="color:var(--light-gray);font-size:0.8rem;margin:0.3rem 0 0;">Perfiles galvanizados de alta resistencia</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <div class="stats-bar">
+    <div class="container">
+      <div class="row g-4 text-center">
+        <div class="col-6 col-md-3">
+          <div class="stat-item">
+            <div class="stat-num counter" data-target="150">0</div><span style="font-family:var(--font-head);font-weight:900;font-size:2rem;color:var(--black);">+</span>
+            <div class="stat-label">Proyectos Completados</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-item">
+            <div class="stat-num counter" data-target="25000">0</div><span style="font-family:var(--font-head);font-weight:900;font-size:2rem;color:var(--black);">+</span>
+            <div class="stat-label">m² Construidos</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-item">
+            <div class="stat-num">100%</div>
+            <div class="stat-label">Satisfacción</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-item">
+            <div class="stat-num counter" data-target="3">0</div>
+            <div class="stat-label">Tipos de Especialidad</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Workflow -->
+  <section class="workflow-section">
+    <div class="container">
+      <div class="section-header centered reveal">
+        <span class="section-label">Metodología</span>
+        <h2 class="light">Cómo Ejecutamos Cada Proyecto</h2>
+        <p style="color:var(--light-gray);">Un proceso claro que garantiza calidad, plazos y acabados profesionales en cada obra.</p>
+      </div>
+      <div class="row g-0">
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="workflow-step-card">
+            <div class="step-number">01</div>
+            <h5>Levantamiento</h5>
+            <p>Visitamos la obra, tomamos medidas exactas y validamos todos los requerimientos técnicos.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="workflow-step-card">
+            <div class="step-number">02</div>
+            <h5>Planificación</h5>
+            <p>Definimos materiales, cronograma detallado y la secuencia óptima de trabajo por etapas.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="workflow-step-card">
+            <div class="step-number">03</div>
+            <h5>Ejecución</h5>
+            <p>Montaje de estructura, drywall, cobertura y acabados según especificaciones acordadas.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="workflow-step-card">
+            <div class="step-number">04</div>
+            <h5>Entrega</h5>
+            <p>Control final de calidad, limpieza completa de la obra y entrega lista para uso inmediato.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section text-center">
+    <div class="container" style="position:relative;z-index:2;">
+      <span class="section-label reveal">¿Te gustó lo que ves?</span>
+      <h2 class="mt-2 reveal">¿Quieres Trabajar con Nosotros?</h2>
+      <p class="reveal">Cuéntanos sobre tu proyecto y te ayudamos a hacerlo realidad.</p>
+      <div class="d-flex justify-content-center gap-3 flex-wrap reveal">
+        <a href="contacto.html" class="btn-gold"><i class="fas fa-envelope"></i> Contactar Ahora</a>
+        <a href="https://wa.me/51924795944" class="btn-outline-light" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-brand"><img src="logo-removebg-preview.png" alt="YUHER"></div>
+          <p class="footer-tagline">Constructora e Inmobiliaria con experiencia en proyectos de alta calidad en el mercado peruano.</p>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <div class="footer-head">Navegación</div>
+          <a href="index.html" class="footer-link">Inicio</a>
+          <a href="nosotros.html" class="footer-link">Nosotros</a>
+          <a href="servicios.html" class="footer-link">Servicios</a>
+          <a href="proyectos.html" class="footer-link">Proyectos</a>
+          <a href="contacto.html" class="footer-link">Contacto</a>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-head">Contacto</div>
+          <div class="footer-contact-line"><i class="fas fa-phone"></i> +51 924 795 944</div>
+          <div class="footer-contact-line"><i class="fas fa-envelope"></i> yuherconstructora@yahoo.com</div>
+          <div class="footer-contact-line"><i class="fas fa-map-marker-alt"></i> Arequipa, Perú</div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-head">Síguenos</div>
+          <a href="https://wa.me/51924795944" class="social-btn" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+          <a href="https://www.facebook.com/share/1HyKZcsqjy/" class="social-btn" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+          
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 YUHER — Constructora e Inmobiliaria. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
